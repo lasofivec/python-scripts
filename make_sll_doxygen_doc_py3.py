@@ -4,18 +4,18 @@
 # It is not suppose to write the documentation but to
 # make the process easier...
 # To execute : python make_doxygen_doc.py <name_of_the_file>
-# Author: Laura S. Mendoza
+# Author : Laura S. Mendoza
 #--------------------------------------------------------
 from sys import argv
 import os
 
 script, filename = argv
 
-print " ================================================="
-print "  Adding Doxygen documentation to file %r." % filename
-print " ================================================="
+print(" =================================================")
+print("  Adding Doxygen documentation to file ", filename)
+print(" =================================================")
 
-print "Opening the file..."
+print("Opening the file...")
 f = open(filename, 'r')
 
 #Creating a temporary file which will be the modified file
@@ -75,7 +75,8 @@ for line in f:
     if (len(line.strip()) != 0):     # Testing if line is empty
         last_line = first_word
 
-print "Headers of documentation written. Don't forget to fill in the documentation yourself."
+print("Headers of documentation written." +\
+      " Don't forget to fill in the documentation yourself.")
 f.close()
 f_new.close()
 
