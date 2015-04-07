@@ -9,6 +9,57 @@
 from sys import argv
 import os
 
+def ignore_word(word):
+    flag = False
+    if (word == ""):
+        flag = True
+    if (word == "&"):
+        flag = True
+    if (word == "!"):
+        flag = True
+    return flag
+
+# file that write the documentation for the functions
+# it writes all parameters in between the brackets as IN parameters
+# and writes the corresponding comment with the name of the agrument 
+def write_doc_for_functions(f, line, last_line, f_new, splitted_line, i):
+    if (len(last_line) == 0)|(last_line[:2]!='!>'): # prevents double writing doc
+        flag_end_of_arguments = 0
+        function_string = \
+            "!-------------------------------------------------------------------\n" + \
+            "!> @brief <BRIEF_DESCRIPTION>\n" + \
+            "!> @details <DETAILED_DESCRIPTION>\n" # header
+        f_new.write(function_string)
+        #.............. writing arguments:
+        i=i+1 # index on word being read, normally we are at function name
+        print "     ...Adding doc for function :", splitted_line[i]
+        while(flag_end_of_arguments == 0): # flag that notifies if ")" was reached
+            i = i+1 #we want to read the next word
+            while ((i <= len(splitted_line)-1) and ignore_word(splitted_line[i])):
+                # while line is not over and the word is a "feeler" word
+                # we continue reading
+                i=i+1
+            if (i == len(splitted_line)) :
+                # if we reached the end of the line but not the end of the document
+                # list, we read the next line
+                next_line = f.next()
+                line = line + next_line # we keep the line to write it at the EOF
+                splitted_line = next_line.split()
+                i=0
+                while (ignore_word(splitted_line[i])):
+                    i = i+1
+            # we finally got the right index for the argument
+            argument = splitted_line[i]
+            if(argument[-1] == ")"):
+                # if it is the last argument we take the ')' out
+                # and activate flag
+                argument = argument[:-1]
+                flag_end_of_arguments = 1
+            if (not ignore_word(argument)):
+                function_argument = "!> @param[IN] "+ argument+" <DESCRIPTION>\n"
+                f_new.write(function_argument)
+    f_new.write(line)
+
 script, filename = argv
 
 print " ================================================="
@@ -23,6 +74,7 @@ f_new = open(filename+".tmp", 'w')
 
 # Variable to keep last line info:
 last_line=""
+
 
 for line in f:
     # Getting the first word, which is usually the keyword
@@ -48,16 +100,8 @@ for line in f:
         f_new.write(line)
     # CASE : function
     elif(first_word == 'function'):
-        if (len(last_line) == 0)|(last_line[:2]!='!>'):
-            function_string = \
-                "!---------------------------------------------------------------------------\n" + \
-                "!> @brief <BRIEF_DESCRIPTION>\n" + \
-                "!> @details <DETAILED_DESCRIPTION>\n" + \
-                "!> @param[<IN or OUT or INOUT>] <PARAM1> <DESCRIPTION>\n" +\
-                "!> @param[<IN or OUT or INOUT>] <PARAM2> <DESCRIPTION>\n"
-            f_new.write(function_string)
-        f_new.write(line)
-    # CASE : subroutine
+        write_doc_for_functions(f, line, last_line, f_new, splitted_line, i)
+        # CASE : subroutine
     elif(first_word == 'subroutine'):
         if (len(last_line) == 0)|(last_line[:2]!='!>'):
             function_string = \
@@ -79,4 +123,6 @@ print "Headers of documentation written. Don't forget to fill in the documentati
 f.close()
 f_new.close()
 
-os.rename(filename+'.tmp', filename)
+#TODO: put it back:
+#os.rename(filename+'.tmp', filename)
+                    
