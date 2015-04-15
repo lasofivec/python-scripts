@@ -8,6 +8,7 @@
 #--------------------------------------------------------
 from sys import argv
 import os
+import re
 
 def ignore_word(word):
     flag = False
@@ -19,45 +20,65 @@ def ignore_word(word):
         flag = True
     return flag
 
+def take_out_ignorables(list):
+    new_list =[]
+    for i in range(len(list)):
+        if (not ignore_word(list[i])):
+            new_list.append(list[i])
+    return new_list
+
 # file that write the documentation for the functions
 # it writes all parameters in between the brackets as IN parameters
 # and writes the corresponding comment with the name of the agrument 
 def write_doc_for_functions(f, line, last_line, f_new, splitted_line, i):
     if (len(last_line) == 0)|(last_line[:2]!='!>'): # prevents double writing doc
-        flag_end_of_arguments = 0
+        #.............. writing header:
         function_string = \
-            "!-------------------------------------------------------------------\n" + \
+            "!---------------------------------------------------------\n" + \
             "!> @brief <BRIEF_DESCRIPTION>\n" + \
             "!> @details <DETAILED_DESCRIPTION>\n" # header
         f_new.write(function_string)
+        
         #.............. writing arguments:
-        i=i+1 # index on word being read, normally we are at function name
-        print "     ...Adding doc for function :", splitted_line[i]
+        flag_end_of_arguments = 0
+        
+        print "     ...Adding doc for function :", \
+            splitted_line[i+1][:splitted_line[i+1].find("(")]
+
+        # Useful variables..................
+        next_line = line
+        i = 0 # index on word being read
+        i_first_arg = line.find("(")
+        i_last_arg  = line.find(")")
+        # Extracting arguments .............
+        list_arg    = re.split(r"\(|,|& |\s",line[line.find("("):line.find(")")])
+        list_arg    = take_out_ignorables(list_arg)
+        
         while(flag_end_of_arguments == 0): # flag that notifies if ")" was reached
-            i = i+1 #we want to read the next word
-            while ((i <= len(splitted_line)-1) and ignore_word(splitted_line[i])):
-                # while line is not over and the word is a "feeler" word
-                # we continue reading
-                i=i+1
-            if (i == len(splitted_line)) :
-                # if we reached the end of the line but not the end of the document
+            if (i == len(list_arg)) :
+                # if we reached the end of the line but not the end of the arguments
                 # list, we read the next line
                 next_line = f.next()
+                print " NEXT LINE 1 =", next_line
                 line = line + next_line # we keep the line to write it at the EOF
                 splitted_line = next_line.split()
+                list_arg = re.split(r"\(|,|& |\s",next_line[:next_line.find(")")])
+                list_arg = take_out_ignorables(list_arg)
                 i=0
-                while (ignore_word(splitted_line[i])):
-                    i = i+1
+
             # we finally got the right index for the argument
-            argument = splitted_line[i]
-            if(argument[-1] == ")"):
-                # if it is the last argument we take the ')' out
-                # and activate flag
-                argument = argument[:-1]
+            argument = list_arg[i]
+
+            if((next_line.find(")") != -1) and (i == len(list_arg)-1)):
+                # if it is the last argument we activate the flag
                 flag_end_of_arguments = 1
+
             if (not ignore_word(argument)):
                 function_argument = "!> @param[IN] "+ argument+" <DESCRIPTION>\n"
                 f_new.write(function_argument)
+            # We read the next argument .................
+            i = i+1 #we want to read the next word
+            
     f_new.write(line)
 
 script, filename = argv
@@ -124,5 +145,5 @@ f.close()
 f_new.close()
 
 #TODO: put it back:
-#os.rename(filename+'.tmp', filename)
+os.rename(filename+'.tmp', filename)
                     

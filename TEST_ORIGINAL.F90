@@ -29,6 +29,12 @@ contains  ! ****************************************************************
     val = spline_obj%slot;                                 \
   end function fname
 
+  function sol_exacte_FMH_der1(eta1,eta2) result(res)
+    sll_real64,intent(in) :: eta1, eta2
+    sll_real64 :: res
+
+    res=eta1+eta2
+  end function sol_exacte_FMH_der1
 
   function new_box_spline_2d( &
        mesh,         &
