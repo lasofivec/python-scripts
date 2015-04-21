@@ -59,7 +59,6 @@ def write_doc_for_functions(f, line, last_line, f_new, splitted_line, i):
                 # if we reached the end of the line but not the end of the arguments
                 # list, we read the next line
                 next_line = f.next()
-                print " NEXT LINE 1 =", next_line
                 line = line + next_line # we keep the line to write it at the EOF
                 splitted_line = next_line.split()
                 list_arg = re.split(r"\(|,|& |\s",next_line[:next_line.find(")")])
@@ -78,7 +77,15 @@ def write_doc_for_functions(f, line, last_line, f_new, splitted_line, i):
                 f_new.write(function_argument)
             # We read the next argument .................
             i = i+1 #we want to read the next word
-            
+
+        # writing result:
+        result_first = line.find("result(")
+        if (result_first != -1) :
+            temp_line = line[result_first+len("result("):]
+            result_last = temp_line.find(")")
+            print " temp line =", temp_line, "index :", result_last
+            function_argument = "!> @param[OUT] "+ temp_line[:result_last]+" <DESCRIPTION>\n"
+            f_new.write(function_argument)
     f_new.write(line)
 
 script, filename = argv
@@ -144,6 +151,5 @@ print "Headers of documentation written. Don't forget to fill in the documentati
 f.close()
 f_new.close()
 
-#TODO: put it back:
 os.rename(filename+'.tmp', filename)
                     
