@@ -118,7 +118,7 @@ for line in f:
 
     # We analyze the first word.........
     # CASE : module
-    if (first_word == 'module') :
+    if (first_word == 'module' and splitted_line[i+1] != 'procedure') :
         if (len(last_line) == 0)|(last_line[:2]!='!>'):
             module_string = "!> @ingroup <DIRECTORY_NAME>\n" + \
                             "!> @author <MODULE_AUTHOR_NAME_AND_AFFILIATION>\n" + \
