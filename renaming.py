@@ -17,7 +17,7 @@ RENAME_MOD = 1
 
 def keywords(type = RENAME_MOD):
     """ Returns an array of keywords, for the type of entity specified.
-    By defaul, returns SeLaLib's modules keywords.
+    By default, returns SeLaLib's modules keywords.
 
     Args:
        type (int): type of entity to be renamed."""
@@ -25,6 +25,7 @@ def keywords(type = RENAME_MOD):
     if (type == RENAME_MOD):
         list_key = []
         list_key+= ["sll"]
+        list_key+= ["m"]
         list_key+= ["module"]
         list_key+= ["mod"]
     else:
@@ -67,11 +68,11 @@ def renaming(original_name):
 
 
 def main():
-    print "sll_module_modname      -->    " + renaming("sll_module_modname")
-    print "modname                 -->    " + renaming("modname")
-    print "modname_module          -->    " + renaming("modname_module")
-    print "specific_modname_1d_mod -->    " + renaming("specific_modname_1d_mod")
-
+    print("sll_module_modname      -->    " + renaming("sll_module_modname"))
+    print("modname                 -->    " + renaming("modname"))
+    print("modname_module          -->    " + renaming("modname_module"))
+    print("sll_m_modname           -->    " + renaming("sll_m_modname"))
+    print("specific_modname_1d_mod -->    " + renaming("specific_modname_1d_mod"))
 
 
 if __name__ == "__main__":
