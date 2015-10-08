@@ -8,25 +8,44 @@
 # Author: Laura S. Mendoza
 #--------------------------------------------------------
 
-def keywords():
-    """ Returns an array of keywords, for the moment only SeLaLib's module
-    keywords. In the future it could take a parameter in order to change
-    the types of keywords (ie. simulations, functions, subroutines, ...) """
+# Globals variables:
+# Types of entities to be renamed. Curently script only working with modules.
+# In the future there could be additional variables for other entities
+# (ie. simulations, functions, subroutines, ...)
+RENAME_MOD = 1
 
-    list_key = []
-    list_key+= ["sll"]
-    list_key+= ["module"]
-    list_key+= ["mod"]
+
+def keywords(type = RENAME_MOD):
+    """ Returns an array of keywords, for the type of entity specified.
+    By defaul, returns SeLaLib's modules keywords.
+
+    Args:
+       type (int): type of entity to be renamed."""
+
+    if (type == RENAME_MOD):
+        list_key = []
+        list_key+= ["sll"]
+        list_key+= ["module"]
+        list_key+= ["mod"]
+    else:
+        raise SystemExit("Error in keywords(). Undefined parameter type="+type)
 
     return list_key
 
 
-def convention():
-    """ Returns a string, for the moment common string to SeLaLib's modules
-    In the future it could take a parameter in order to adapt it to other
-    types (ie. simulations, functions, subroutines, ...) """
+def convention(type = RENAME_MOD):
+    """ Returns a string common to the type of entity passed in parameter.
+    By default, returns SeLaLib's modules string found at the begining.
 
-    return "sll_m"
+    Args:
+       type (int): type of entity to be renamed."""
+
+    if (type == RENAME_MOD):
+        conv = "sll_m"
+    else:
+        raise SystemExit("Error in keywords(). Undefined parameter type="+type)
+
+    return conv
 
 
 def renaming(original_name):
