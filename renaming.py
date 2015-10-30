@@ -28,13 +28,15 @@ def keywords(type = RENAME_MOD):
         list_key+= ["m"]
         list_key+= ["module"]
         list_key+= ["mod"]
+        list_key+= ["sim"]
+        list_key+= ["simulation"]
     else:
         raise SystemExit("Error in keywords(). Undefined parameter type="+type)
 
     return list_key
 
 
-def convention(type = RENAME_MOD):
+def convention(splitted, type = RENAME_MOD):
     """ Returns a string common to the type of entity passed in parameter.
     By default, returns SeLaLib's modules string found at the begining.
 
@@ -43,6 +45,9 @@ def convention(type = RENAME_MOD):
 
     if (type == RENAME_MOD):
         conv = "sll_m"
+        for word in splitted :
+            if (word == "simulation") or (word == "sim") :
+                conv = "sll_m_sim"
     else:
         raise SystemExit("Error in keywords(). Undefined parameter type="+type)
 
@@ -57,7 +62,7 @@ def renaming(original_name):
 
     list_key   = keywords()
     splitted   = original_name.split("_")
-    modulename = convention()
+    modulename = convention(splitted)
 
     for word in splitted :
         if not word in list_key :
@@ -73,6 +78,7 @@ def main():
     print("modname_module          -->    " + renaming("modname_module"))
     print("sll_m_modname           -->    " + renaming("sll_m_modname"))
     print("specific_modname_1d_mod -->    " + renaming("specific_modname_1d_mod"))
+    print("simulation_modname_mod  -->    " + renaming("simulation_modname_mod"))
 
 
 if __name__ == "__main__":
