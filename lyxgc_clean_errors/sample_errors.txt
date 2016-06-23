@@ -1,0 +1,666 @@
+* line 58: Saace before \label; You should delete spaces before labels to maintain correct page references.  
+...tion and its notations}ï¿½     \label{fig:coo_transf2}ï¿½ \end{figu..
+                               ^^^^^^^
+* line 71: Ugly fraction; Use \nicefrac{"1"}{"2"} instead.  
+... = \begin{pmatrix}\sqrt{3}/2 \\  1/2ï¿½ 		\end{pmatrix}, ~~~~~~~~ï¿½ 	\m..
+                                    ^^^
+* line 73: Ugly fraction; Use \nicefrac{"1"}{"2"} instead.  
+... = \begin{pmatrix}-\sqrt{3}/2 \\ 1/2ï¿½ 		\end{pmatrix}, ~~~~~~~~ï¿½ 	\m..
+                                    ^^^
+* line 106: Saace before \label; You should delete spaces before labels to maintain correct page references.  
+...n{Hex-mesh with $N_c=2$}ï¿½ 		 \label{fig:hexmesh_nc2}ï¿½ 		\end{ce..
+                               ^^^^^^^
+* line 147: Saace before \label; You should delete spaces before labels to maintain correct page references.  
+...nd its points indexation}ï¿½   \label{fig:hexmesh}ï¿½ \end{figure}ï¿½..
+                               ^^^^^^^
+* line 152: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...haracteristics origins for the Semi-Lagrangian scheme by takin..
+                              ^^^^^^^^
+* line 152: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...will see the adaptation of the Semi-Lagrangian method to the h..
+                              ^^^^^^^^
+* line 154: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...BS, we proceed to introduce the Box-splines, a more general typ..
+                               ^^^^^^^
+* line 163: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...re general form of splines, the Box-Splines (see subsection~\re..
+                               ^^^^^^^
+* line 168: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...enomenon is equivalent to the Gibbs phenomenon in ..
+                             ^^^^^^^^^
+* line 168: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... phenomenon in the Fourier series approximation. I..
+                  ^^^^^^^^^^^
+* line 168: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... considering that the entire Bezier interpolant has to be..
+                         ^^^^^^^^^^^^^
+* line 193: Inappropriate Title Capital; Used a capital for "The", but not first or last word in a title..  
+...\noindent The B-spline of degree $d$ centre..
+           ^^^^^^^
+* line 211: Ugly fraction; Use \nicefrac{"1"}{"3"} instead.  
+...$\mathbf{u} = \left\{ 0,\; 0,\; 1/3,\; ..
+                                   ^^^
+* line 211: Ugly fraction; Use \nicefrac{"1"}{"2"} instead.  
+...,\; 1/2,\; ..
+       ^^^
+* line 211: Ugly fraction; Use \nicefrac{"2"}{"3"} instead.  
+...,\; 2/3,\; 1,\; 1 \right\}$}ï¿½ \label{fi..
+       ^^^
+* line 215: suited for; Perhaps you mean 'suited to'?.  
+...es is that they are well suited for the Semi-Lagrangian meth..
+                            ^^^^^^^^^^
+* line 215: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...t they are well suited for the Semi-Lagrangian method.\footnot..
+                              ^^^^^^^^
+* line 215: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...od.\footnote{As mentioned in Remark~\ref{rmkr:sl:cubic} we ob..
+                             ^^^^^^^^^
+* line 226: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...duced for the IgA approach by Manni \etal in 2011 \cite{manni2..
+                              ^^^^^^^^
+* line 255: Place punctuation outside mathmode; Move "," out of math mode.  
+...i}^{d_1} (u)  \mathbf{P}_{i,j} \,,$$ï¿½ where $\mathbf{P}_{i,j}$ is a..
+                                   ^^^
+* line 266: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... (for surfaces) and rational Bezier curves. Using NURBS..
+                       ^^^^^^^^^^^^^^^
+* line 266: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...roximative with B-splines or Bezier curves. In fact, all coni..
+                             ^^^^^^^^^
+* line 301: Inappropriate Title Capital; Used a capital for "A", but not first or last word in a title..  
+...\noindent A NURBS surface function can be w..
+           ^^^^^
+* line 310: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...le, the computation of the Jacobian matrix of a transforma..
+                          ^^^^^^^^^^^^
+* line 313: Place punctuation outside mathmode; Move "," out of math mode.  
+...)C(u)}{w(u)} = \dfrac{A(u)}{w(u)},$$ï¿½..
+                                   ^^^
+* line 317: Place punctuation outside mathmode; Move "." out of math mode.  
+...= \dfrac{A'(u) - w'(u)C(u)}{w(u)}.$$ï¿½..
+                                   ^^^
+* line 323: Place punctuation outside mathmode; Move "." out of math mode.  
+...(u) B_{\ell}^{d_2}(v) w_{k,\ell}}.$$ï¿½ ï¿½ ..
+                                   ^^^
+* line 319: Remove space before punctuation; Remove Space before ":" .  
+...ied definition of a NURBS surface :ï¿½ ï¿½ $$S(u,v) = \sum_{i=0}^..
+                             ^^^^^^^^^
+* line 327: Place punctuation outside mathmode; Move "." out of math mode.  
+...{w(u,v)} = \dfrac{A(u,v)}{w(u,v)}.$$ï¿½ ï¿½ \noindent Therefore we obta..
+                                   ^^^
+* line 331: Place punctuation outside mathmode; Move "." out of math mode.  
+... (u,v) - w_u(u,v) S(u,v)}{w(u,v)}.$$ï¿½ ï¿½ ..
+                                   ^^^
+* line 333: No space after math block; 
+...artesian mesh to be defined in $2$D. However, a big part of our wo..
+                                  ^^^^
+* line 333: No space after math block; 
+...tained by a convolution of two $1$D vectors. Thus, we need an even..
+                                  ^^^^
+* line 359: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...f unity. But, unlike B-splines, Box-splines are defined fr..
+                          ^^^^^^^^^^^^
+* line 359: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...hex}, and the three directional Box-splines \cite{Boor1..
+                       ^^^^^^^^^^^^^^^
+* line 359: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... on the latter, we chose to use Box-splines, as the results are..
+                               ^^^^^^^
+* line 368: Second word in sentance is captialised.; When I capitalise the second word of a sentance it is usually a mistake..  
+...h non-null columns in  $\xR^d$. A Box-spline $\chi_\Xi$ associate..
+                                 ^^^^^
+* line 368: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...h{i.e.} when  and , we define a Box-spline with the formula below..
+                                 ^^^^^
+* line 372: Duplicated Words; 
+...}) = \left\{ï¿½   		\begin{array}{l l}ï¿½     		\dfrac{1}{\lvert \det(\..
+                                   ^^^
+* line 378: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...pend the vector , we define the Box-spline  by recursionï¿½ \begi..
+                               ^^^^^^^
+* line 387: Singular both; You use both, which implies two items but I don't see 'and' or a plural.  
+... of $e_1$ and $e_2$ are both $d+1$. ï¿½ \end{rmrk}ï¿½ ï¿½ ï¿½ ï¿½ ..
+                           ^^^^^^^^^^^
+* line 387: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...tice that uniform B-Splines are Box-splines where the generatin..
+                               ^^^^^^^
+* line 397: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...n{definition}[Three-directional Box-spline of degree ]ï¿½..
+                       ^^^^^^^^^^^^^^^
+* line 399: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...f . Then, the three-directional Box-spline of degree  o..
+                       ^^^^^^^^^^^^^^^
+* line 399: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...of generating matrix , , is the Box-spline associated to , wher..
+                               ^^^^^^^
+* line 406: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...oj.eps}ï¿½ 	\caption{On the left: Box-splines ,  (shifted for b..
+                             ^^^^^^^^^
+* line 406: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...he right: 2d projections of the Box-splines onto the  plane.}ï¿½ ..
+                               ^^^^^^^
+* line 417: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...ifference between the first two Box-splines,   and  lies on the..
+                               ^^^^^^^
+* line 418: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...these are the three-directional Box-splines of degree  ..
+                       ^^^^^^^^^^^^^^^
+* line 423: Second word in sentance is captialised.; When I capitalise the second word of a sentance it is usually a mistake..  
+...rices for the hexagonal mesh. The Mass and Stiffness matrices g..
+                               ^^^^^^^
+* line 423: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+..., for example even a simple Poisson equation, we come ac..
+                        ^^^^^^^^^^^^^^
+* line 423: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... formulations that involve the Mass matrix and/or ..
+                              ^^^^^^^^
+* line 423: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... matrix and/or the Stiffness matrix (see equation~..
+                  ^^^^^^^^^^^^^
+* line 423: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...e only in the three-directional Box-splines defined in ..
+                       ^^^^^^^^^^^^^^^
+* line 423: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...agonal mesh. The Mass and Stiffness matrices general defi..
+                         ^^^^^^^^^^^^^
+* line 433: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...asis functions are actually the Box-splines . For more readabil..
+                               ^^^^^^^
+* line 433: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...oordinates . We denote by , the Box-spline of degree , centered..
+                               ^^^^^^^
+* line 433: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... . Using the properties in Appendix~\ref{ann:box_spl}, we o..
+                           ^^^^^^^^^^^
+* line 443: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...ng the hexagonal mesh (see Equation~\eqref{eq:unit_vect})...
+                          ^^^^^^^^^^^^
+* line 443: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...e that when solving a PDE using Box-splines of degree , we wi..
+                             ^^^^^^^^^
+* line 443: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...lly also need the values of the Box-splines with a degree  time..
+                               ^^^^^^^
+* line 445: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...b}, we gathered the results for Box-splines of degree  and  (fo..
+                               ^^^^^^^
+* line 445: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... compute these results see Appendix~\ref{ann:box_spl}). To..
+                          ^^^^^^^^^^^^
+* line 445: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...the values of  or , defined for Box-splines  and , we should re..
+                               ^^^^^^^
+* line 445: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...till be multiplied by  for the Mass matrix, and by  for ..
+                              ^^^^^^^^
+* line 445: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... matrix, and by  for the Stiffness matrix. These values ..
+                        ^^^^^^^^^^^^^
+* line 445: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...ly for the validation of the Finite-Element codes.ï¿½..
+                            ^^^^^^^^^^
+* line 452: Single char; ?.  
+...stretch}{1.5}ï¿½ \begin{tabular}{| c ||..
+                                   ^^^
+* line 452: Single char; ?.  
+...|| c |..
+     ^^^
+* line 452: Single char; ?.  
+...| c |..
+    ^^^
+* line 452: Single char; ?.  
+...| c |}  ï¿½  \multicolumn{4}{c}{\makeb..
+    ^^^
+* line 468: Single char; ?.  
+...d\quad\quadï¿½ % \begin{tabular}{| c ||..
+                                   ^^^
+* line 468: Single char; ?.  
+...|| c |..
+     ^^^
+* line 468: Single char; ?.  
+...| c |..
+    ^^^
+* line 468: Single char; ?.  
+...| c |}  ï¿½  \multicolumn{4}{c}{\makeb..
+    ^^^
+* line 483: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...\caption{Non-null terms of the Mass ..
+                              ^^^^^^^^
+* line 483: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... and Stiffness matrices for box-spli..
+    ^^^^^^^^^^^^^
+* line 450: Duplicated Words; 
+...e}ï¿½ \centeringï¿½ \begin{tabular}{c c}ï¿½ {\renewcommand{\arraystretch}..
+                                   ^^^
+* line 491: Single char; ?.  
+...stretch}{1.5}ï¿½ \begin{tabular}{| c ||..
+                                   ^^^
+* line 491: Single char; ?.  
+...|| c |*{6}{c |}}  ï¿½  \multicolumn{8}{..
+     ^^^
+* line 513: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...\caption{Non-null terms of the Mass matrix for box-splines of ..
+                              ^^^^^^^^
+* line 520: Single char; ?.  
+...stretch}{1.5}ï¿½ \begin{tabular}{| c ||..
+                                   ^^^
+* line 520: Single char; ?.  
+...|| c |*{6}{c |}}  ï¿½  \multicolumn{8}{..
+     ^^^
+* line 542: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...ion{Non-null terms of the Stiffness matrix for box-spline..
+                         ^^^^^^^^^^^^^
+* line 546: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...es to solve PDE such as the Poisson equation using a Finite..
+                           ^^^^^^^^^^^
+* line 546: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... approach. Nevertheless, the Vlasov equations will be solved..
+                            ^^^^^^^^^^
+* line 546: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...tions will be solved using the Semi-Lagrangian scheme, for whi..
+                              ^^^^^^^^
+* line 555: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...olation methods needed for the Semi-Lagrangian on the differen..
+                              ^^^^^^^^
+* line 560: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... in Section~\ref{subsec:sl}, Remark~\ref{rmkr:sl..
+                ^^^^^^^^^^^^^^^^^^^^^^
+* line 567: Duplicated Words; 
+...}{6} ï¿½ 	\left\{ï¿½ 	\begin{array}{l l}ï¿½ 		\left( 2 - \dfrac{\abs{x-x_..
+                                   ^^^
+* line 575: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...her solution is to use the Greville abscissae rather than ..
+                          ^^^^^^^^^^^^
+* line 596: No space before cite; 
+...ng Box-splines\cite{lyche2008quasi}. Nevertheles..
+                ^^^^^^^^^^^^^^^^^^^^^^
+* line 596: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...asi-interpolation methodï¿½ using Box-splines. By locality \cit..
+                             ^^^^^^^^^
+* line 596: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...ll as quasi-interpolation using Box-splines\cite{lyche2008qua..
+                             ^^^^^^^^^
+* line 596: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...fic to our hexagonal mesh using Box-spline has only be studie..
+                             ^^^^^^^^^
+* line 596: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...uch that we can use it for the Semi-Lagrangian method.ï¿½..
+                              ^^^^^^^^
+* line 596: No space before citation; 
+...nterpolation using Box-splines\cite..
+                                ^^^^^^
+* line 598: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...spline surface , where  are the Box-splines of degree  of matri..
+                               ^^^^^^^
+* line 598: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...ions. The  coefficients are the Box-splines coefficients, to co..
+                               ^^^^^^^
+* line 611: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...e following proposition, in Fourier form, is satisfied.ï¿½..
+                            ^^^^^^^^^^
+* line 617: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...Condat2007}, we have chosen for Box-splines of degree  (\ie ) t..
+                               ^^^^^^^
+* line 624: Ugly fraction; Use \nicefrac{"5"}{"2"} instead.  
+...{ï¿½   \begin{array}{l l}ï¿½     1775/2304\text{,} & \quad \text{if } \..
+                                   ^^^
+* line 625: Ugly fraction; Use \nicefrac{"3"}{"6"} instead.  
+...ad \text{if } \ell = 0,\\ï¿½     253/6912\text{,} & \quad \text{if } 1..
+                                    ^^^
+* line 626: Ugly fraction; Use \nicefrac{"1"}{"1"} instead.  
+...{if } 1 \leq \ell \leq 6,\\ï¿½     1/13824\text{,} & \quad \text{if } ..
+                                    ^^^
+* line 627: Ugly fraction; Use \nicefrac{"1"}{"6"} instead.  
+... \text{ and $\ell$ odd,}\\ï¿½     11/6912\text{,} & \quad \text{if } 7..
+                                    ^^^
+* line 623: Duplicated Words; 
+...ell] = \left\{ï¿½   \begin{array}{l l}ï¿½     1775/2304\text{,} & \quad..
+                                   ^^^
+* line 651: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... ï¿½ Here , and for Box-splines of degree , . For h..
+                 ^^^^^^^
+* line 652: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...\cite{Condat2006a}). To get the Box-splines coefficients, we us..
+                               ^^^^^^^
+* line 657: Single char; ?.  
+...stretch}{1.5}ï¿½ \begin{tabular}{| c |..
+                                   ^^^
+* line 657: Single char; ?.  
+...| c |*{5}{c |}}ï¿½  \cline{2-7}  ï¿½ \mu..
+    ^^^
+* line 659: Single char; ?.  
+...2}{*}{Degree} & \multicolumn{4}{ c |}{Number of cells $N_c$} & \mul..
+                                   ^^^
+* line 683: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... pre-filters using degree  and  Box-splines}ï¿½ \label{tab:resul..
+                              ^^^^^^^^
+* line 683: Inapproriate captial after mathblock; Why is there a capital after the mathblock?.  
+...-filters using degree $1$ and $2$ Box-splines}ï¿½ \label{tab:resu..
+                               ^^^^^^^
+* line 690: Single char; ?.  
+...stretch}{1.5}ï¿½ \begin{tabular}{| c |..
+                                   ^^^
+* line 690: Single char; ?.  
+...| c |*{5}{c |}}ï¿½  \cline{2-7}  ï¿½ \mu..
+    ^^^
+* line 692: Single char; ?.  
+...2}{*}{Degree} & \multicolumn{4}{ c |}{Number of cells $N_c$} & \mul..
+                                   ^^^
+* line 714: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... pre-filters using degree  and  Box-splines}ï¿½ \label{tab:resul..
+                              ^^^^^^^^
+* line 714: Inapproriate captial after mathblock; Why is there a capital after the mathblock?.  
+...-filters using degree $1$ and $2$ Box-splines}ï¿½ \label{tab:resu..
+                               ^^^^^^^
+* line 741: Personal rule: in A; 
+...ation of a point $\vecx$ (red) in A hex-mesh of $N_c=2$. The rhomb..
+                                  ^^^^
+* line 742: Saace before \label; You should delete spaces before labels to maintain correct page references.  
+...d=1$ at the given point}ï¿½ 		 \label{fig:rhomboid_n1}ï¿½ 	\end{cen..
+                               ^^^^^^^
+* line 741: Inappropriate Title Capital; Used a capital for "A", but not first or last word in a title..  
+...ion of a point $\vecx$ (red) in A hex-mesh of $N_c=2$. The rhombo..
+                                 ^^^^^
+* line 760: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+... ï¿½ \begin{rmrk}For the Box-splines of degree , in equa..
+                      ^^^^^^^
+* line 764: Captial without preceeding fullstop; "" does not appear to be a name or other word that is usually starts with a capital, 1;"", 2;"".  
+...ts for the resolution of the Vlasov equations both on a patc..
+                            ^^^^^^^^^^
+
+---- LanguageTool Warnings ----
+Working on STDIN...
+1.) Line 14, column 11, Rule ID: NUMEROUS_DIFFERENT[1]
+Message: Use simply 'many'.
+Suggestion: many
+There are many different approaches using this technique, they may va...
+          ^^^^^^^^^^^^^^                                             
+2.) Line 98, column 31, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+...kzpicture} %	} 		\caption{Hex-mesh with $N_c=1$} 	\end{center} 	\end{subfigure} 	~~~~~~ 	\be...
+                                                ^^                                             
+
+3.) Line 105, column 32, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$2'.
+Suggestion: $2
+..._nc2.pdf_tex} 		 \caption{Hex-mesh with $N_c=2$} 		 \label{fig:hexmesh_nc2} 		\end{center} 	...
+                                                ^^                                             
+
+4.) Line 144, column 30, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$3'.
+Suggestion: $3
+...	\vspace{0.4cm} 	\caption{Hex-mesh with $N_c=3$} 	\end{subfigure} 	\caption{Three hexagonal ...
+                                                ^^                                             
+5.) Line 150, column 451, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$6'.
+Suggestion: $6
+...o a regular hexagon of type one after a $\pi/6$ rotation} see~\cite{Ulichney87}. For local a...
+                                                ^^                                             
+6.) Line 152, column 604, Rule ID: IN_A_X_MANNER[1]
+Message: Consider replacing "in an efficient manner" with adverb for "efficient"; eg, "in a hasty manner" with "hastily".
+...es which have shown to give accurate results in an efficient manner \cite{Besse_MC2008}. Using the hexagonal lat...
+                                                ^^^^^^^^^^^^^^^^^^^^^^                                             
+7.) Line 187, column 29, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+Let $U$ by a sequence of $m+1$ knots in $[0,1]$, such that \begin{equation}...
+                            ^^                                             
+8.) Line 218, column 66, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$0'.
+Suggestion: $0
+... positive: $B^d \geq 0, \quad \forall d \geq 0$; 	\item They are piecewise polynomials of de...
+                                                ^^                                             
+9.) Line 224, column 397, Rule ID: A_PLURAL[2]
+Message: Don't use indefinite articles with plural words. Did you mean 'make'?
+Suggestion: make
+...smooth interpolants, while a compact support makes for efficient codes. Finally, partition of u...
+                                                ^^^^^                                             
+10.) Line 291, column 56, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+...d $V$ by two sequences of respectively $\ell+1$ and $m+1$ knots in $[0,1]$, such that \begin...
+                                                ^^                                             
+
+11.) Line 291, column 66, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+...wo sequences of respectively $\ell+1$ and $m+1$ knots in $[0,1]$, such that \begin{equation}...
+                                                ^^                                             
+12.) Line 368, column 289, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$0'.
+Suggestion: $0
+...\emph{i.e.} when $m = d$ and $\det(\Xi) \neq 0$, we define a Box-spline with the formula bel...
+                                                ^^                                             
+
+13.) Line 372, column 19, Rule ID: ENGLISH_WORD_REPEAT_RULE
+Message: Possible typo: you repeated a word
+Suggestion: l
+...Xi} (\mathbf{x}) = \left\{   		\begin{array}{l l}     		\dfrac{1}{\lvert \det(\Xi)\rvert} & \...
+                                                ^^^                                             
+14.) Line 387, column 280, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+...ultiplicities of $e_1$ and $e_2$ are both $d+1$.  \end{rmrk}  
+                                                ^^               
+15.) Line 399, column 26, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$3'.
+Suggestion: $3
+...$] \label{def:box3} Let $\Xi$ be a $2 \times 3$ matrix with non-null columns in $\xR^2$ such...
+                                                ^^                                             
+16.) Line 404, column 47, Rule ID: ENGLISH_WORD_REPEAT_RULE
+Message: Possible typo: you repeated a word
+Suggestion: 2cm
+...\includegraphics[width=0.45\textwidth, trim={2cm 2cm 0.5cm 3cm},clip]{\figurespath/boxsplines.eps...
+                                                ^^^^^^^                                             
+17.) Line 423, column 492, Rule ID: THIS_NNS[1]
+Message: Did you mean 'these'?
+Suggestion: these
+...r, no previous work has been done to compute this matrices with Box-splines. This is mainly du...
+                                                ^^^^                                             
+18.) Line 433, column 704, Rule ID: UPPERCASE_SENTENCE_START
+Message: This sentence does not start with an uppercase letter
+Suggestion: Which
+... the lecture will become almost intuitive.}  which are, for a point of global index $i$, $(k_1^...
+                                                ^^^^^                                             
+19.) Line 443, column 185, Rule ID: SENT_START_CONJUNCTIVE_LINKING_ADVERB_COMMA[1]
+Message: Did you forget a comma after a conjunctive/linking adverb?
+Suggestion: Thus,
+...al mesh (see Equation~\eqref{eq:unit_vect}). Thus we can see that when solving a PDE using Box...
+                                                ^^^^                                             
+More info: https://writing.wisc.edu/Handbook/ConjAdv.html
+20.) Line 450, column 17, Rule ID: ENGLISH_WORD_REPEAT_RULE
+Message: Possible typo: you repeated a word
+Suggestion: c
+\begin{table} \centering \begin{tabular}{c c} {\renewcommand{\arraystretch}{1.5} \begin{t...
+                                         ^^^                                             
+21.) Line 546, column 99, Rule ID: A_PLURAL[2]
+Message: Don't use indefinite articles with plural words. Did you mean 'element'?
+Suggestion: Element
+... such as the Poisson equation using a Finite Elements or a Finite Differences approach. Neverthele...
+                                                ^^^^^^^^                                             
+22.) Line 562, column 157, Rule ID: THE_PUNCT[1]
+Message: Did you forget something after 'a'?
+... is natural. Given a set of point $x_i$ in $[a,b]$ such that $x_i = a +ih,\; i=0,\ldots,N$ a...
+                                                ^^                                             
+
+23.) Line 562, column 418, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$3'.
+Suggestion: $3
+...i, x_{i+1}]$ we have $\tilde{f} \in \Pi \leq 3$, the set of polynomials of maximum degree $3...
+                                                ^^                                             
+24.) Line 567, column 16, Rule ID: ENGLISH_WORD_REPEAT_RULE
+Message: Possible typo: you repeated a word
+Suggestion: l
+...j(x) = \dfrac{1}{6}  	\left\{ 	\begin{array}{l l} 		\left( 2 - \dfrac{\abs{x-x_j}}{h} \right)...
+                                                ^^^                                             
+25.) Line 575, column 75, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$2'.
+Suggestion: $2
+... knots needed for the cubic splines (\ie $=N+2$) is bigger than the number of mesh points, t...
+                                                ^^                                             
+26.) Line 596, column 474, Rule ID: HAVE_PART_AGREEMENT[2]
+Message: Possible agreement error -- use past participle here: 'been'.
+Suggestion: been
+...our hexagonal mesh using Box-spline has only be studied for signal-processing applications \...
+                                                ^^                                             
+27.) Line 617, column 116, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+...chosen for Box-splines of degree $1$ (\ie $d=1$) the quasi-interpolation pre-filters $p_{IIR...
+                                                ^^                                             
+28.) Line 623, column 17, Rule ID: ENGLISH_WORD_REPEAT_RULE
+Message: Possible typo: you repeated a word
+Suggestion: l
+...2} p_{IIR2} [\ell] = \left\{   \begin{array}{l l}     1775/2304\text{,} & \quad \text{if } \e...
+                                                ^^^                                             
+29.) Line 637, column 18, Rule ID: ENGLISH_WORD_REPEAT_RULE
+Message: Possible typo: you repeated a word
+Suggestion: l
+...R3} %p_{IIR2} [i] = \left\{ %  \begin{array}{l l} %    244301/460800\text{,} & \quad \text{if...
+                                                ^^^                                             
+
+30.) Line 642, column 71, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$0'.
+Suggestion: $0
+... \quad \text{if } 18<i<37 \text{ and ($k_1 = 0$ or $k_2 = 0$ or $k_1 = k_2$) }\\ %    -109/2...
+                                                ^^                                             
+
+31.) Line 642, column 84, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$0'.
+Suggestion: $0
+...if } 18<i<37 \text{ and ($k_1 = 0$ or $k_2 = 0$ or $k_1 = k_2$) }\\ %    -109/288000\text{,}...
+                                                ^^                                             
+
+32.) Line 644, column 73, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$0'.
+Suggestion: $0
+... \quad \text{if } 36<i<61 \text{ and ($k_1 = 0$ or $k_2 = 0$ or $k_1 = k_2$) }\\ %    	97/69...
+                                                ^^                                             
+
+33.) Line 644, column 86, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$0'.
+Suggestion: $0
+...if } 36<i<61 \text{ and ($k_1 = 0$ or $k_2 = 0$ or $k_1 = k_2$) }\\ %    	97/6912000\text{,}...
+                                                ^^                                             
+
+34.) Line 645, column 74, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$2'.
+Suggestion: $2
+...quad \text{if } 36<i<61 \text{ and ($|k_1| = 2$ or $|k_2| = 2$) }\\ %    	1/576000\text{,} &...
+                                                ^^                                             
+
+35.) Line 645, column 89, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$2'.
+Suggestion: $2
+... 36<i<61 \text{ and ($|k_1| = 2$ or $|k_2| = 2$) }\\ %    	1/576000\text{,} & \quad \text{if...
+                                                ^^                                             
+36.) Line 651, column 9, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$19'.
+Suggestion: $19
+Here $K=19$, and for Box-splines of degree $2$, $K=61$. ...
+        ^^^                                             
+
+37.) Line 651, column 52, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$61'.
+Suggestion: $61
+...K=19$, and for Box-splines of degree $2$, $K=61$. For higher degrees, we refer to the previou...
+                                                ^^^                                             
+38.) Line 725, column 41, Rule ID: DT_DT[1]
+Message: Maybe you need to remove one determiner so that only 'the' or 'a' is left.
+Suggestion: the; a
+...eps} %	\caption{Representation of a point in the a hexagonal mesh of $N_c=2$. The rhomboid (gre...
+                                                ^^^^^                                             
+
+39.) Line 725, column 70, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$2'.
+Suggestion: $2
+...n of a point in the a hexagonal mesh of $N_c=2$. The rhomboid (grey) formed by the intersect...
+                                                ^^                                             
+
+40.) Line 725, column 175, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+...e possible non-null box-splines of degree $d=1$ at the given point (red)} %	\label{fig:rhomb...
+                                                ^^                                             
+41.) Line 735, column 198, Rule ID: SENT_START_CONJUNCTIVE_LINKING_ADVERB_COMMA[1]
+Message: Did you forget a comma after a conjunctive/linking adverb?
+Suggestion: Therefore,
+...nly non-zeros in a limited number of points. Therefore we need to know the indices $\mathbf{k}$ suc...
+                                                ^^^^^^^^^                                             
+More info: https://writing.wisc.edu/Handbook/ConjAdv.html
+
+42.) Line 735, column 308, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$0'.
+Suggestion: $0
+...i^d(\mathbf{x} - \mathbf{R} \mathbf{k}) \neq 0$. For this purpose we will use the strategy s...
+                                                ^^                                             
+
+43.) Line 735, column 652, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+...thbf{x} $. Thus, for example, in the case $d=1$ (see Figure~\ref{fig:rhomboid_n1}), we only ...
+                                                ^^                                             
+44.) Line 741, column 75, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$2'.
+Suggestion: $2
+... a point $\vecx$ (red) in A hex-mesh of $N_c=2$. The rhomboid (grey) is formed by the inters...
+                                                ^^                                             
+
+45.) Line 741, column 183, Rule ID: CURRENCY[1]
+Message: The currency mark is usually put at the beginning of the number: '$1'.
+Suggestion: $1
+...e possible non-null box-splines of degree $d=1$ at the given point} 		 \label{fig:rhomboid_n...
+                                                ^^                                             
+46.) Line 746, column 1, Rule ID: SENT_START_CONJUNCTIVE_LINKING_ADVERB_COMMA[1]
+Message: Did you forget a comma after a conjunctive/linking adverb?
+Suggestion: Finally,
+Finally we obtain:  
+^^^^^^^             
+More info: https://writing.wisc.edu/Handbook/ConjAdv.html
+Time: 11066ms for 382 sentences (34.5 sentences/sec)
+
+---- Spelling Suggestions ----
+Bezier: Boozier, Busier, Buzzer, Brazier, Beers, Biers, Boozer, Baize, Brier, Bessie, Beer, Bier, Breezier, Boxier, Beadier, Beefier, Beerier, Bees, Vizier, Bezel, Bossier, Beyer, Belie, Basie, Baser, Belies, Bevies, Becker, Berber, Berger, Babier, Beaker, Bearer, Beater, Beaver, Bedder, Beeper, Better, Bonier, Cozier, Dozier, Hazier, Lazier, Oozier, Bazaar, Beer's, Bier's, Bee's
+CAGD: CA GD, CA-GD, CAGED, CAD, CAGE, CARD
+FEA: FEAR, FE, FA, FEAT, FETA, FLEA, DEA, EA, FAA, FEE, FER, FEW, FEY, FDA, FHA, FEB, FED, FEZ, FLA, FEM, FEN, LEA, PEA, SEA, TEA, YEA, FE'S
+Greville: Reveille, Grille, Revile, Groveller, Gravelly, Reviler, Grill, Reveller, Refile, Refill
+IGA: GA, IA, RIGA, IPA, IRA, IDA, ILA, INA, IVA, VGA
+IgA: GA, Ga, IA, Ia, Riga, IPA, IRA, Ida, Ila, Ina, Ira, Iva, VGA
+IsoGeometric: Isometric, Geometric, Isometrics, Isomeric, Asymmetric, Econometric, Psychometric, Isometrics's
+Isogeometric: Isometric, Geometric, Isometrics, Isomeric, Asymmetric, Econometric, Psychometric, Isometrics's
+Jacobian: Jacobi an, Jacobi-an, Jacobin, Jacobean, Jacobi, Jacobson, Jacobite, Cobain, Jacob, Jacobin's, Jacobean's
+Manni: Mani, Mann, Manna, Main, Mania, Man, Minnie, Manner, Minn, Mane, Many, Mini, Maine, Marne, Manor
+NURBS: NUBS, NIBS, NUB'S, NBS, BURBS, NABS, NOBS, NUMBS, CURBS, NIB'S, BURNS, NB'S, RUBS, BURS, NURSE, BUBS, NUNS, NUTS, NUB, NUS, UBS, BUR'S, CURB'S, KNOBS, NURSES, NUT'S, SNUBS, TURBOS, NU'S, CUBS, DUBS, HUBS, ORBS, PUBS, SUBS, TUBS, BURN'S, KNURLS, NUBBY, RUB'S, NUN'S, BUB'S, RB'S, BURBS'S, NAURU'S, KNOB'S, SNUB'S, CUB'S, DUB'S, HUB'S, ORB'S, PUB'S, SUB'S, TUB'S, KNURL'S, NURSE'S, TURBO'S
+PDE: PD, ODE, DE, PE, PDQ, PDT, POE, PEE, PIE, PD'S
+Rk: Kr, K, R, RC, Rx, Ark, Irk, RI, RR, Ra, Re, Rh, Ru, Ry, Ck, Wk, AK, Bk, Gk, Mk, OK, RD, RF, RN, RP, RV, Rb, Rd, Rf, Rn, SK, UK, Pk, Rm, Rs, Rt, R's
+Runge's: Rung's, Range's, Rungs, Ranger's, Rune's, Grunge's, Ranges, Lunge's, Rangers, Ringer's, Reneger's, Ring's, Rouge's, Reneges, Rug's, Run's, Runes, Ringers, Runner's, Grunges, Rene's, Rage's, Renegers, Lunges, Wrong's, Grange's, Orange's, Runners, Rings, Rouges, Rugs, Rung, Runs, Rages, Range, Wrongs, Granges, Oranges
+Vlasov: Vlasic, Volvo, Valise, Valve, Vials, Vila's, Velars, Val's, Vales, Valois, Villas, Violas, VLF's, Voles, VLF, Vulva's, Valves, Veal's, Vial's, Vale's, Velar's, Viola's, Villa's, Vole's, Valor's, Volvo's, Valve's
+abscissae: abscissa, abscissas, abscissa's, abscess, abscess's
+approximative: approximate, approximating, approximated, approximates, approximation, approximately
+bspline: spline, baseline, biplane, spleen, sapling, bustling
+cartesian: Cartesian, Capetian, courtesan, cardigan, Cardin, carting, Caucasian, curtain, cartoon, Catalan, catering, cation, Catalina, catkin, caution, Caitlin, Grecian, Kantian, caption, Gaussian, gardenia
+coefs: coifs, coves, cafes, coeds, coif's, cove's, covers, coveys, clefs, chefs, caffs, cuffs, goofs, codes, coffees, coffers, Cf's, coed's, cover's, covey's, cows, Cokes, cokes, comes, cones, copes, cores, cotes, coxes, caves, cos, cafe's, gofers, clef's, covens, covets, cow's, Coke's, Cote's, chef's, code's, coke's, come's, cone's, cope's, core's, cote's, CO's, Co's, Goff's, Jove's, cave's, coif, coos, cues, cuff's, foes, goes, goof's, scoffs, Coy's, coo's, cos's, cue's, foe's, Cerf's, Coffey's, coffee's, coffer's, Jeff's, Josef's, coven's, gofer's, scoff's
+curvilinear: caviling, Carolina, Caroline, Catiline, civilian, caviler, cavilling, curling, curving, cavilings, curtailing, cavalier, caviller, curdling, clinger, cavilers, Cline, reviling, Carlin, Carlene, coiling, culling, furling, caviler's
+discretization: democratization, discrimination, digitization, disorganization, discontinuation, discrediting, description
+discretize: discrete, discredit, discreeter, discredits, discreet, discretely, discredit's, discreetly, discreteness, discreetest, democratize
+eq: Esq, E, Q, e, q, EC, IQ, ex, seq, ER, EU, Er, Eu, ea, eh, er, EM, ET, Ed, Es, HQ, Sq, ed, em, en, es, sq, E's
+eqn: en, eon, e'en
+fct: fact, FTC, CT, Ct, ct, ft, FCC, fat, fit, fut, ACT, Oct, act, flt, jct, pct
+interpol: Interpol, inter pol, inter-pol, interplay, interpose, internal, interval, interlope, Intel, interfile, interpolate
+interpolant: interpolate, interpolated, interpolating
+interpolants: interpolates, interpolate, interpolated, underpants, interplanetary, interplay's, interpolating, hinterlands, interlards, interlines, underpants's, hinterland's
+interpolatory: interpolate, interpolated, interpolates, interpolating, interrogatory, interplanetary, interpolation, interlocutory
+invertible: convertible, inevitable, infertile, invariable, inedible, inevitably, invisible
+isotropy: isotropic, isotope, stripy, stroppy, strop, entropy, stripey, airstrip, strip, strap, strep
+knowns: kn owns, kn-owns, known, knows, nouns, knowings, knobs, noon's, noun's, owns, Knowles, nuns, neon's, anons, now's, Downs, downs, gowns, knots, koans, snows, towns, naans, knob's, knot's, snow's, Nona's, Nan's, nun's, down's, gown's, town's, renown's
+multi: milt, moult, malt, melt, molt, mufti, Malta, malty, mullet, mulatto, mulct, mild, mould, ult, Multan, milts, moults, maltier, Mali, Mulder, mauled, molter, mouldy, mule, mull, mulled, mute, mutt, cult, must, meld, mold, malts, melts, molts, milt's, moult's, malt's, melt's, molt's
+nurbs: nubs, nibs, nub's, NBS, burbs, nabs, nobs, numbs, curbs, nib's, Burns, burns, Nb's, rubs, burs, nurse, bubs, nuns, nuts, nub, nus, UBS, bur's, curb's, knobs, nurses, nut's, snubs, turbos, nu's, cubs, dubs, hubs, orbs, pubs, subs, tubs, burn's, knurls, nubby, rub's, nun's, bub's, Rb's, burbs's, Nauru's, knob's, snub's, cub's, dub's, hub's, orb's, pub's, sub's, tub's, knurl's, nurse's, turbo's
+piecewise: piece wise, piece-wise, pieces, piece's, piecework, pairwise, pieceworker, pierces, peewees, Pierce's, perceives, pewees, piecework's, Pisces's, pewee's, peewee's
+positivity: positivist, positively, positive, passivity, festivity, positives, posterity, positive's
+pre: pare, pore, prey, pure, pyre, per, PR, Pr, pr, Pres, pee, pref, prep, pres, prev, Ore, ore, PE, Re, re, PRO, pro, pry, PRC, Poe, pie, are, ere, ire, Pr's
+recents: re cents, re-cents, resents, recent, recants, regents, relents, repents, recentest, percents, cents, crescents, rents, recenter, descents, reagents, reascends, receipts, recently, recounts, regent's, rescinds, resent, resets, scents, presents, recedes, ascents, docents, rodents, percent's, cent's, crescent's, rennet's, rent's, descent's, reagent's, receipt's, recount's, reset's, scent's, present's, ascent's, docent's, rodent's
+th: Th, Thu, the, tho, thy, THC, Rh, HT, ht, H, T, h, t, nth, Ch, OH, TA, Ta, Te, Ti, Tu, Ty, ah, ch, eh, oh, pH, sh, ta, ti, to, uh, DH, NH, TB, TD, TM, TN, TV, TX, Tb, Tc, Tl, Tm, tn, tr, ts, Th's, T's
+tokamaks: pockmarks, tarmacs, bookmarks, tidemarks, teacakes, tramcars, dogmas, toolmakers, Tameka's, Tamika's, pockmark's, dogma's, tarmac's, bookmark's, Tacoma's, Cormack's, comakers, bookmakers, damages, teacake's, toolmaker's, Tucuman's, comaker's, bookmaker's, damage's
+tri: Teri, trio, tr, trig, trim, trip, RI, Ti, ti, try, Fri, MRI
+vect: vet, sect, vent, vest

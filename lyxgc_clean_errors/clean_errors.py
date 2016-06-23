@@ -160,4 +160,4 @@ print "    *", ignore_rule4, " errors of type [Word not in dictionnary] were era
 f.close()
 f_new.close()
 
- os.rename(filename+'.tmp', filename)
+os.rename(filename+'.tmp', filename)
